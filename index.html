@@ -1,7 +1,424 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+
+      <script type="text/javascript"
+              src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+    <bibtex src="test2.bib"></bibtex>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="George Deligiannidis" >
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./navbar.css" rel="stylesheet">
+
+    <title>George Deligiannidis</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+    body {
+    position: relative;
+    }
+    #info {padding-top:40px;}
+    #bio {padding-top:60px;}
+    #research {padding-top:50px;}
+    #teaching {padding-top:50px; }
+    #sc5 {padding-top:50px; }
+    #talks {padding-top:50px; }
+    #abstract {border-width:3px; border-style:solid; border-color:#FF0000; padding: 1em;}
+    #pubs {padding-top:10px; }
+    #statml {padding-top:50px; }
+
+
+    h3 {
+        scroll-margin-top: 70px;
+        scroll-snap-margin-top: 70px; /* iOS 11 and older */
+        }
+    h4 {
+        scroll-margin-top: 70px;
+        scroll-snap-margin-top: 70px; /* iOS 11 and older */
+        }
+
+/* If the browser supports the property... */
+    @supports (scroll-margin-top: 0;) {
+    h4 {
+    scroll-margin-top: 50px;
+        }
+        }
+
+/*
+    h4::before {
+        display: block;
+        content: " ";
+        margin-top: -220px;
+        height: 300px;
+        visibility: hidden;
+        pointer-events: none;
+        }
+
+*/
+
+
+    .btn3 {font-size: 22px;}
+
+    .btn {
+        background-color: white;
+        border-style: solid;
+        border-color: royalblue;
+        color: darkgreen;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        }
+
+    #contact {padding-top:60px; }
+    #section41 {padding-top:100px;}
+    #section42 {padding-top:100px;color: #fff; background-color: #009688;}
+
+    div.templates {
+		counter-reset: n;
+/*		display: flex;*/
+		flex-direction: column-reverse;
+	}
+	div.bibtexentry > p:nth-child(1)::before {
+		counter-increment: n;
+		content: "" counter(n) ". ";
+		flex: 0 0 auto;
+	}
+
+
+</style>
+
+</head>
+
+
+
+<body role="main" data-spy="scroll" data-target=".navbar" data-offset="50">
+<a name="top"></a>
+
+<nav id=navbar class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark navbar-fixed-top">
+      <a class="navbar-brand" href="#">George Deligiannidis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" href="#bio">Bio</a>
+              <a class="dropdown-item" href="#news">News</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com"  id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" href="#interests">Research Interests</a>
+                    <a class="dropdown-item" href="#pubs">Publications</a>
+                    <a class="dropdown-item" href="#talks">Talks</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teaching</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" href="#sc5">Advanced Simulation Methods</a>
+              <a class="dropdown-item" href="#statml">Modern Statistics (StatML)</a>
+              <a class="dropdown-item" href="#sb21">SB2.1 Foundations of Statistical Inference</a>
+            </div>
+          </li>
+<!--
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MSc in Statistical Science</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" href="#externalproj">External Projects for MSc</a>
+            </div>
+          </li>
+-->
+        </ul>
+        <!--<form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search">
+        </form>-->
+      </div>
+    </nav>
+
+
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-sm-16 mx-auto" style="padding-top:30px">
+            <h1>George Deligiannidis</h1>
+              <p class="lead">Professor of Statistics <br> Director of MSc in Statistical Science
+                <br> Department of Statistics, University of Oxford</p>
+
+            <ul class="list-unstyled">
+                <li>Hugh Price Fellow in Statistics, Jesus College</li>
+            </ul>
+            <h4 >Contact info</h4>
+                Email: deligian 'at' stats.ox.ac.uk <br />
+                Telephone: 01865282855
+        </div>
+        <div class="col-sm-14 mx-auto" >
+            <img src="./images/VMP_0327.jpg" alt="This is me" style="width:300px;padding-top:30px";>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Info-->
+<div  class="container-fluid">
+    <h3 class="col-lg-12 " id="bio" >Brief Bio</h3>
+     <div class="col-lg-12 text-left">
+    I studied mathematics (MMath) at Warwick university, then went on to study for a joint MSc in Financial Mathematics at Heriot-Watt University and the University of Edinburgh. I got my PhD from the University of Nottingham where I studied with Sergey Utev and Huiling Le.
+
+    After my PhD I worked at the Department of Mathematics of the University of Leicester as Teaching Assistant and Teaching Fellow between 2009 and 2012. I moved to the Department of Statistics of the University of Oxford as a Departmental Lecturer, where I stayed until 2016 when I moved to King's College London as Lecturer in Statistics. I moved back to Oxford as Associate Professor of Statistics in late 2017.
+    I was promoted to Professor of Statistics in August 2024.
+    </div>
+</div>
+
+<div  class="container-fluid">
+    <h3 class="col-lg-12 " id="news" >News</h3>
+     <div class="col-lg-12 text-left">
+      <b>October 17th, 2024</b>
+      New preprint out with P. Potapchik and I. Azangulov, on the iteration complexity of denoising diffusion models under the manifold hypothesis. 
+      The paper is on <a href="https://arxiv.org/abs/2410.09046">arXiv</a>. Our bound is linear in the intrinsic dimension and sharp. In the context of 
+      ImageNet this suggests using ~100 steps (intrinsic dimension), whereas existing state-of-the-art bounds suggest using 150k iterations (ambient dim).
+      <br>
+
+      <b>September 30, 2024</b>
+      <br>
+      New preprint out with I. Azangulov and J. Rousseau, on the convergence of denoising diffusion models 
+      under the manifold hypothesis. The paper can be found <a href="https://arxiv.org/abs/2409.18804v1">here</a>. 
+      We show that diffusion models achieve rates for score learning and sampling(in KL) independent of the ambient
+      dimension, showing that they adapt to the underlying manifold structure. 
+    </div>
+</div>
+
+
+<div  class="container-fluid">
+<h3  class="col-lg-12 text-left">Research</h3>
+<h4 id="interests" class="col-lg-12 text-left">Research Interests</h4>
+
+    <div class="col-lg-12 text-left">
+    I work in the intersection of probability and statistics to analyse random processes and objects, especially those arising from algorithms used in computational statistics and machine learning. I have worked extensively on the theory and methodology of sampling methods, especially Markov Chain Monte Carlo. I have also worked on random walks on lattices and groups.
+        <br />
+    At the moment I am particularly interested in the interplay between sampling, optimal transport and machine learning.
+    </div>
+    </div>
+
+<!--
+<div class="panel-group" id="accordion2" style="padding-left: 15px" "padding-top: 5px">
+<button class="btn btn3" id="btnml" type="button" style="padding-top: 10px" data-toggle="collapse" data-target="#ML">+Publications+
+  </button>
+    </div>
+-->
+
+<div  class="container-fluid">
+<h4  id="pubs" class="col-lg-12">Publications</h4>
+
+<div class="bibtex_structure ">
+  <div class="sort year" extra="DESC number">
+        <div class="templates"></div>
+  </div>
+</div>
+
+<div id="bibtex_display">
+	<div class="bibtex_template col-lg-12">
+		<p>
+			<span class="if author">
+				<span class="author" style="color:slategray"><span class="first_initial"></span> <span class="last"></span></span>,
+			</span>
+			<span class="if title">
+				<i>"<span class="title" style="color:darkred"></span></i>",
+			</span>
+			<span class="if journal"><em><span class="journal"  style="color:darkcyan"></span></em>,</span>
+			<span class="if booktitle"><em><span class="booktitle" style="color:darkcyan"></span></em>,</span>
+<!--			<span class="if editor"><span class="editor"></span> (editors),</span>-->
+<!--		<span class="if publisher"><em><span class="publisher"></span></em>,</span>-->
+			<span class="if institution"><span class="institution"></span>,</span>
+			<span class="if address"><span class="address"></span>,</span>
+			<span class="if volume">vol. <b><span class="volume"></span></b>,</span>
+			<span class="if journal number">(<span class="number"></span>),</span>
+			<span class="if pages"> pp. <span class="pages"></span>,</span>
+			<span class="if month"><span class="month"></span>,</span>
+			<span class="if year"><span class="year"></span>.</span>
+            <br>
+            <span class="if url" style="margin-left: 0px">
+                <a class="url btn btn-primary btn-rounded" style="font-size:80%"> link</a>  </span>
+            <span class="if eprint">
+                <a class="bibtexVar btn btn-primary btn-rounded" style="font-size:80%" padding-left=10px href="https://arxiv.org/pdf/+eprint+" extra="eprint">
+                       arXiv</a>
+            </span>
+            </p>
+        </div>
+
+	   </div>
+    </div>
+
+<div  class="container-fluid">
+  <h4 id="talks" class="col-lg-12 text-left">Selected Talks</h4>
+  <ul>
+    <li> <i><a > Cambridge, Statslab</a> </i>, April 2024</li>
+    <li> <i><a > Warwick Stats Seminar</a> </i>, June 2023</li>
+      <li> <i><a href="https://www.aproc.gr/"> Athens Probability Colloquium</a> </i>, March 2023</li>
+      <li> <i><a href="https://prairie-institute.fr/"> PRAIRIE</a> Colloquium </i>, December 2022</li>
+      <li> <i>ESSEC Statistics Seminar </i>, May 2022</li>
+      <li> <i>AUEB (ΟΠΑ) Statistics Seminar </i>, October 2021</li>
+      <li> <i>Imperial Statistics Seminar</i>, October 2021</li>
+      <li> Session on PDMPs and hypo-coercivity, <i>MCQMC</i>, Oxford, 2020</li>
+      <li> <i>Mathematical Conversations</i>, Institute for Advanced Study, Princeton, 2020</li>
+      <li> <i>Bayescomp</i>, Florida 2020 </li>
+      <li> <i>European Meeting of Statisticians</i>, Palermo 2019</li>
+      <li> <i>Probability Seminar</i>, Warwick, February 2019.</li>
+      <li> <i>SIAM Conference on High Dimensional Inference and Monte Carlo Techniques</i>, Warwick 2019</li>
+      <li> <i>Statistics Seminar</i>, Bristol, October 2018.</li>
+      <li> <i>Bayesian Computation for High-Dimensional Statistical Models</i>, IMS, Singapore, September 2018.</li>
+      <li> <i>Opening talk of Applied Mathematics Session</i>, 3rd UK India Frontiers of Science Meeting, Royal Society, Chicheley Hall, May 2018.</li>
+      <li> <i>BayesComp</i>, Session on PDMPs, Barcelona, March 2018. </li>
+      <li> Machine Learning Seminar, Department of Information Technology, Uppsala, January 2018.</li>
+      <li> Department of Statistics, Warwick, June 2017.</li>
+      <li> Department of Statistics, Harvard University, May 2017. </li>
+      <li> <i>Stochastic Analysis Seminar</i>, Imperial College, December 2016.</li>
+      <li> <i>Midlands Probability Seminar</i>, University of Warwick, May 2016.</li>
+      <li> <i> Mathematical Finance Seminar</i>, Mathematical Institute, Oxford, March 2016.</li>
+      <li> <i> Christmas Workshop on Sequential Monte Carlo</i>, Imperial College, December 2015.</li>
+      <li> <i> Probability Colloquium</i>, Maxwell Institute, Edinburgh, September 2015.</li>
+      <li> <i> Probability and Statistics Seminar</i>, University of Bristol, March 2015. </li>
+      <li> <i> Limit theorems in probability and dynamics</i>, {CIRM, Marseilles}, July 2014.</li>
+    </ul>
+</div>
+
+   <!--Teaching-->
+<div  class="container-fluid">
+  <div id="teaching" class="row">
+      <div class="col-lg-12 text-left">
+          <h2 id="research" class="col-lg-12 text-left">Teaching</h2>
+          <!--<h1 class="mt-5">Teaching</h1>     -->
+            </div>
+    </div>
+
+      <div class="text-left">
+          <h3 id ="sc5" class="col-lg-12 text-left">Advanced Simulation SC5 (2019-2020)</h3>
+        </div>
+
+
+            <p class="col-lg-12 text-left"><img src="/~deligian/images/dice.jpeg" alt="an image alt text" title="an image title" /></p>
+
+        <h4 id="lectures" class="col-lg-12 text-left">Lectures</h4>
+            <ul>
+                <li>Monday, 16:00-17:00, LG01 Department of Statistics</li>
+                <li>Tuesday, 11-12:00, LG01 Department of Statistics.</li>
+            </ul>
+
+        <h4 id="classes" class="col-lg-12 text-left">Classes</h4>
+
+            <h5 id="undergraduates" class="col-lg-12 text-left">Undergraduates:</h5>
+                <ul>
+                    <li>Tuesday, weeks 2,5,7, TT1 13:30-15:00</li>
+                    <li>Thursday, weeks 2,5,7, TT1 10-11:30</li>
+                </ul>
+
+            <h5 id="msc" class="col-lg-12 text-left">MSc</h5>
+                <ul>
+                        <li>Tuesday, weeks 3, 5, 7, 8 16-17:00</li>
+                </ul>
+
+        <h4 id="problem-sheets" class="col-lg-12 text-left">Problem Sheets</h4>
+            <ul>
+                <li><a href="&quot;https://stats.ox.ac.uk/~deligian/pdf/sc5/problemsheets/problem0_2019.pdf&quot;">Problem Sheet 0</a>, this is a preparatory problem sheet covering some prerequisites.</li>
+                <li><a href="/~deligian/pdf/sc5/problemsheets/problem1_2019.pdf">Problem Sheet 1</a>, Due Monday, wk 2 @ 9 a.m. (UG only).</li>
+                <li><a href="/~deligian/pdf/sc5/problemsheets/problem2_2019.pdf">Problem Sheet 2</a>, Due Monday, wk 5 @ 9 a.m. (UG only).</li>
+            </ul>
+
+        <h4 id="solutions-to-r-exercises" class="col-lg-12 text-left">Solutions to R exercises</h4>
+            <ul>
+                  <li><a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_1.3.1.html">Exercise_1.3.1</a> and <a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_1.3.1.Rmd">R-code</a></li>
+                  <li><a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.1.html">Exercise_2.1.1</a> and <a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.1.Rmd">R-code</a></li>
+                  <li><a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.2.1.html">Exercise_2.1.2.1</a> and <a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.2.1.Rmd">R-code</a></li>
+                  <li><a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.2.2.html">Exercise_2.1.2.2</a> and <a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.2.2.Rmd">R-code</a></li>
+                  <li><a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.3.html">Exercise_2.1.3</a> and <a href="/~deligian/pdf/sc5/R_Exercises_2018-19/Exercise_2.1.3.Rmd">R-code</a></li>
+                </ul>
+
+        <h4 id="notes" class="col-lg-12 text-left">Notes</h4>
+            <p class="col-lg-12 text-left">These may be updated as we go.</p>
+            <ul>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes1.pdf">Chapter 1</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes2.pdf">Chapter 2</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/GD_2016_notes3.pdf">Chapter 3</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes4.pdf">Chapter 4</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes5.pdf">Chapter 5</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes6.pdf">Chapter 6</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes7_old.pdf">Chapter 7 </a> (old reversible jump MCMC no longer in the syllabus)</li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes7_pdf">Chapter 7 </a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes8.pdf">Chapter 8</a></li>
+                  <li><a href="/~deligian/pdf/sc5/notes/notes9.pdf">Chapter 9</a></li>
+                </ul>
+
+        <h4 id="slides" class="col-lg-12 text-left">Slides</h4>
+            <p class="col-lg-12 text-left">These will be updated as we go, however only minor changes will be made. Feel free to use these to prepare ahead of the lecture.</p>
+
+            <ul>
+                  <li><a href="/~deligian/pdf/sc5/slides/L1.pdf">Chapter 1</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L2.pdf">Chapter 2</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L3.pdf">Chapter 3</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L4.pdf">Chapter 4</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L5.pdf">Chapter 5</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L6.pdf">Chapter 6</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L7.pdf">Chapter 7</a></li>
+                  <li><a href="/~deligian/pdf/sc5/slides/L8.pdf">Chapter 8</a></li>
+                </ul>
+
+        <h4 class="col-lg-12 text-left" >Disclaimer</h4>
+            <p class="col-lg-12 text-left">Disclaimer This course is based on the material developed by previous instructors, including Arnaud Doucet, Pierre E. Jacob, Rémi Bardenet, George Deligiannidis, Lawrence M. Murray, Tigran Nagapetyan, Patrick Rebeschini and Paul Vanetti.</p>
+
+    <div class="col-lg-12 text-left">
+          <h2 id="statml">Modern Statistical Theory (StatML CDT)</h2>
+
+            <h4 >Notes</h4>
+                <ul>
+                    <li> <a href="/~deligian/pdf/statml/notes_ver2.pdf">Notes</a></li>
+                    <li> <a href="/~deligian/pdf/statml/high-dim-regression_lecturenotes.pdf">Slides</a></li>
+                </ul>
+    </div>
+
+
+    <div class="col-lg-12 text-left">
+          <h2 id="sb21">SB21 Foundations of Statistical Inference</h2>
+        		<p class="col-lg-12 text-left">
+				I will be updating these from time to time, but not very regularly.
+        		For the most up-to-date notes and problem sheets please visit the Canvas website.
+        		</p>
+            <h4 >Notes</h4>
+                <ul>
+                    <li> <a href="/~deligian/pdf/sb21/sb21_notes.pdf">Notes</a></li>
+                </ul>
+    </div>
+
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
