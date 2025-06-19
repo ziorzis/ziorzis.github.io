@@ -36,6 +36,85 @@
             background-color: #f3f4f6;
         }
     </style>
+
+    <style>
+          body {
+          position: relative;
+          }
+          #info {padding-top:40px;}
+          #bio {padding-top:60px;}
+          #research {padding-top:50px;}
+          #teaching {padding-top:50px; }
+          #sc5 {padding-top:50px; }
+          #talks {padding-top:50px; }
+          #abstract {border-width:3px; border-style:solid; border-color:#FF0000; padding: 1em;}
+          #pubs {padding-top:10px; }
+          #statml {padding-top:50px; }
+
+
+          h3 {
+              scroll-margin-top: 70px;
+              scroll-snap-margin-top: 70px; /* iOS 11 and older */
+              }
+          h4 {
+              scroll-margin-top: 70px;
+              scroll-snap-margin-top: 70px; /* iOS 11 and older */
+              }
+
+      /* If the browser supports the property... */
+          @supports (scroll-margin-top: 0;) {
+          h4 {
+          scroll-margin-top: 50px;
+              }
+              }
+
+      /*
+          h4::before {
+              display: block;
+              content: " ";
+              margin-top: -220px;
+              height: 300px;
+              visibility: hidden;
+              pointer-events: none;
+              }
+
+      */
+
+
+          .btn3 {font-size: 22px;}
+
+          .btn {
+              background-color: white;
+              border-style: solid;
+              border-color: royalblue;
+              color: darkgreen;
+              padding: 5px 5px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 22px;
+              }
+
+          #contact {padding-top:60px; }
+          #section41 {padding-top:100px;}
+          #section42 {padding-top:100px;color: #fff; background-color: #009688;}
+
+          div.templates {
+          counter-reset: n;
+      /*		display: flex;*/
+          flex-direction: column-reverse;
+        }
+        div.bibtexentry > p:nth-child(1)::before {
+          counter-increment: n;
+          content: "" counter(n) ". ";
+          flex: 0 0 auto;
+        }
+
+
+      </style>
+
+
+
 </head>
 <body>
 
