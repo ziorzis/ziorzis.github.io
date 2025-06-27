@@ -20,7 +20,11 @@ icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name 
 
 url: https://ziorzis.github.io # the base hostname & protocol for your site
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
+=======
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+>>>>>>> Stashed changes
 =======
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 >>>>>>> Stashed changes
