@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-10-17
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our preprint <a href="{{ '/publications/' | relative_url }}">Linear Convergence of Diffusion Models Under the Manifold Hypothesis</a> is out. In the context of ImageNet, our work suggests using ~100 steps (intrinsic dim) for effective sampling, compared to the existing state-of-the-art bounds, which recommend ~150k steps (ambient dim).

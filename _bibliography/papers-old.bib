@@ -1,0 +1,64 @@
+---
+---
+
+@article{potaptchik2024linear,
+  title={Linear Convergence of Diffusion Models Under the Manifold Hypothesis},
+  author={Potaptchik, Peter and Azangulov, Iskander and Deligiannidis, George},
+  year={2024},
+  arxiv={2410.09046},
+  abstract={
+    <b>Our work explains why sampling from ImageNet needs only 100 steps instead of 150k!</b>
+    <br>
+    <br>
+    Diffusion models have proven to be state-of-the-art for sampling from complex high-dimensional
+    data distributions, e.g., audio, images, molecules, text and videos. An important
+    question is to determine their <em>iteration complexity</em>, meaning the number of steps
+    diffusion models require to converge. Prior work has shown that
+    this complexity is linear in the <em>extrinsic data dimension D</em>. However, the
+    distribution of interest often has much lower <em>d</em>-dimensional structure, as suggested by the
+    <em>manifold hypothesis</em>. We take the best of both worlds and show that the number of steps
+    required is linear in the <em>intrinsic dimension d</em>. },
+  preview={bunny_diffusion.gif},
+  journal={Preprint}
+}
+
+@article{potaptchik2023finetti,
+  title={de Finetti's theorem and the existence of regular conditional distributions and strong laws on exchangeable algebras},
+  author={Potaptchik, Peter and Roy, Daniel M. and Schrittesser, David},
+  year={2023},
+  arxiv={2312.16349},
+  abbr={DFN},
+  journal={Preprint},
+  abstract={We show the following generalizations of the de Finetti–Hewitt–Savage
+    theorem<span>&#58;</span> Given an exchangeable sequence of random elements, the
+    sequence is conditionally i.i.d. if and only if each random element admits
+    a regular conditional distribution given the exchangeable σ-algebra (equivalently, the shift invariant or the tail algebra). We use this result, which
+    holds without any regularity or technical conditions, to demonstrate that
+    any exchangeable sequence of random elements whose common distribution
+    is Radon is conditional i.i.d.}
+}
+
+@article{kapusniak2024metric,
+  title={Metric Flow Matching for Smooth Interpolations on the Data Manifold},
+  author={Kapusniak, Kacper and Potaptchik, Peter and Reu, Teodora and Zhang, Leo and Tong, Alexander and Bronstein, Michael and Bose, Avishek Joey and Di Giovanni, Francesco},
+  journal={NeurIPS},
+  year={2024},
+  arxiv={2405.14780},
+  preview={mfm.gif},
+  abstract={Matching objectives underpin the success of modern generative models and rely
+    on constructing conditional paths that transform a source distribution into a target
+    distribution. Despite being a fundamental building block, conditional paths have
+    been designed principally under the assumption of Euclidean geometry, resulting in
+    straight interpolations. However, this can be particularly restrictive for tasks such as
+    trajectory inference, where straight paths might lie outside the data manifold, thus
+    failing to capture the underlying dynamics giving rise to the observed marginals.
+    In this paper, we propose <emp>METRIC FLOW MATCHING (MFM)</emp>, a novel simulationfree framework
+    for conditional flow matching where interpolants are approximate
+    geodesics learned by minimizing the kinetic energy of a data-induced Riemannian
+    metric. This way, the generative model matches vector fields on the data manifold,
+    which corresponds to lower uncertainty and more meaningful interpolations. We
+    prescribe general metrics to instantiate MFM, independent of the task, and test it on
+    a suite of challenging problems including LiDAR navigation, unpaired image translation,
+    and modeling cellular dynamics. We observe that MFM outperforms the Euclidean baselines,
+    particularly achieving SOTA on single-cell trajectory prediction.}
+}

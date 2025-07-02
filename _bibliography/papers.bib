@@ -1,8 +1,32 @@
+---
+---
+
+@misc{goyal2025mixingtimeboundsgibbs,
+      title={Mixing Time Bounds for the Gibbs Sampler under Isoperimetry}, 
+      author={Alexander Goyal and George Deligiannidis and Nikolas Kantas},
+      year={2025},
+      arxiv = {https://arxiv.org/abs/2506.22258},
+      primaryClass={math.ST},
+      abstract={We establish bounds on the conductance for the systematic-scan
+       and random-scan Gibbs samplers when the target distribution satisfies
+        a Poincare or log-Sobolev inequality and possesses sufficiently regular
+         conditional distributions. These bounds lead to mixing time guarantees
+          that extend beyond the log-concave setting, offering new insights into
+           the convergence behavior of Gibbs sampling in broader regimes. Moreover,
+            we demonstrate that our results remain valid for log-Lipschitz and
+             log-smooth target distributions. Our approach relies on novel three-set
+              isoperimetric inequalities and a sequential coupling argument for the
+               Gibbs sampler.
+}
+}
+
+
 @article{deligiannidis2024importance,
   title={On importance sampling and independent Metropolis-Hastings with an unbounded weight function},
   author={Deligiannidis, George and Jacob, Pierre E and Khribch, El Mahdi and Wang, Guanyang},
   arxiv = {https://arxiv.org/abs/2401.09866},
-  year={2024}
+  year={2024},
+  selected = {true},
 }
 
 
@@ -11,7 +35,9 @@
   author={Pidstrigach, Jakiw and Baker, Elizabeth and Domingo-Enrich, Carles and Deligiannidis, George and N{\"u}sken, Nikolas},
   booktitle={accepted at ICML 2025},
   arxiv = {https://arxiv.org/abs/2504.03461},
-  year={2025}
+  abbr = {ICML},
+  year={2025},
+  selected = {true},
 }
 
 
@@ -20,6 +46,7 @@
   author={Cornish, Rob and Caterini, Anthony and Deligiannidis, George and Doucet, Arnaud},
   booktitle={ICML},
   pages={2133--2143},
+  abbr = {ICML},
   year={2020},
   html={http://proceedings.mlr.press/v119/cornish20a.html},
   organization={PMLR},
@@ -40,8 +67,10 @@
       year={2025},
       arxiv = {https://arxiv.org/abs/2410.09046},
       booktitle = {accepted at COLT},
+      abbr = {COLT},
       arxiv={https://arxiv.org/abs/2410.09046},
-	keywords = {preprint}
+	keywords = {preprint},
+  selected = {true},
 }
 
 @article{azangulov2024convergence,
@@ -49,13 +78,15 @@
       author={Iskander Azangulov and George Deligiannidis and Judith Rousseau},
       year={2024},
       arxiv = {https://arxiv.org/abs/2409.18804},
-	keywords = {preprint}
+	keywords = {preprint},
+  selected = {true},
 }
 
 @inproceedings{cornish2019scalable,
   title={Scalable Metropolis-Hastings for exact Bayesian inference with large datasets},
   author={Cornish, Robert and Vanetti, Paul and Bouchard-C{\^o}t{\'e}, Alexandre and Deligiannidis, George and Doucet, Arnaud},
   booktitle={ICML (Long oral)},
+  abbr = {ICML},
   year={2019},
   html={https://proceedings.mlr.press/v97/cornish19a/cornish19a.pdf},
   keywords={conf, star}
@@ -65,6 +96,7 @@
   title={Bernoulli race particle filters},
   author={Schmon, Sebastian M and Doucet, Arnaud and Deligiannidis, George},
   booktitle={AISTATS},
+  abbr = {AISTATS},
   pages={2350--2358},
   year={2019},
   html ={https://proceedings.mlr.press/v89/schmon19a.html},
@@ -77,6 +109,7 @@
   author={Middleton, Lawrece and Deligiannidis, George and Doucet, Arnaud and Jacob, Pierre E},
   booktitle={{AISTATS 2019}, (Oral)},
   pages={2378--2387},
+  abbr = {AISTATS},
   year={2019},
   html = {https://proceedings.mlr.press/v89/middleton19a.html},
   organization={PMLR},
@@ -88,6 +121,7 @@
   author={Hayou, Soufiane and Clerico, Eugenio and He, Bobby and Deligiannidis, George and Doucet, Arnaud and Rousseau, Judith},
   booktitle={AISTATS (Oral)},
   pages={1324--1332},
+  abbr = {AISTATS},
   year={2021},
   html={http://proceedings.mlr.press/v130/hayou21a.html},
   organization={PMLR},
@@ -100,6 +134,7 @@
   title={Hausdorff dimension, heavy tails, and generalization in neural networks},
   author={Simsekli, Umut and Sener, Ozan and Deligiannidis, George and Erdogdu, Murat A},
   journal={{NeurIPS} ({Spotlight})},
+  abbr = {NeurIPS},
   volume={33},
   pages={5138--5151},
   year={2020},
@@ -111,6 +146,7 @@
   title={Differentiable particle filtering via entropy-regularized optimal transport},
   author={Corenflos, Adrien and Thornton, James and Deligiannidis, George and Doucet, Arnaud},
   booktitle={{ICML} {(Long Oral)}},
+  abbr = {ICML},
   pages={2100--2111},
   year={2021},
   html ={https://proceedings.mlr.press/v139/corenflos21a.html},
@@ -122,6 +158,7 @@
   title={Fractal structure and generalization properties of stochastic optimization algorithms},
   author={Camuto, Alexander and Deligiannidis, George and Erdogdu, Murat A and Gurbuzbalaban, Mert and Simsekli, Umut and Zhu, Lingjiong},
   journal={NeurIPS (Spotlight)},
+  abbr = {NeurIPS},
   volume={34},
   year={2021},
   html={https://proceedings.neurips.cc/paper/2021/hash/9bdb8b1faffa4b3d41779bb495d79fb9-Abstract.html},
@@ -135,8 +172,9 @@
   title={Neural Score matching for high-dimensional causal inference},
   author={Clivio, Oscar and Falck, Fabian and Brieuc, Lehmann, and Deligiannidis, George and Holmes, Chris},
   booktitle={AISTATS},
+  abbr = {AISTATS},
   year = {2022},
-  html={https://proceedings.neurips.cc/paper/2021/hash/9bdb8b1faffa4b3d41779bb495d79fb9-Abstract.html},
+  html={https://proceedings.mlr.press/v151/clivio22a.html},
   keywords={conf, star}
 }
 
@@ -145,6 +183,7 @@
   title={Conditional Gaussian PAC-Bayes},
   author={Clerico, Eugenio and Deligiannidis, George and Doucet, Arnaud},
   booktitle={AISTATS},
+  abbr = {AISTATS},
   year = {2022},
   html = {https://proceedings.mlr.press/v151/clerico22a.html},
   keywords={conf}
@@ -157,6 +196,7 @@
       title={Chained Generalisation Bounds},
       author={Eugenio Clerico and Amitis Shidani and George Deligiannidis and Arnaud Doucet},
       booktitle={{COLT}},
+      abbr = {COLT},
       year={2022},
       html={https://proceedings.mlr.press/v178/clerico22a/clerico22a.pdf},
       keywords={conf, star}
@@ -168,6 +208,7 @@
   title={A Continuous Time Framework for Discrete Denoising Models},
   author={Campbell, Andrew and Benton, Joe and De Bortoli, Valentin and Rainforth, Tom and  Deligiannidis, George and Doucet, Arnaud},
   journal={NeurIPS 2022  (oral)},
+  abbr = {NeurIPS},
   html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/b5b528767aa35f5b1a60fe0aaeca0563-Abstract-Conference.html},
   year={2022},
   keywords={conf, star}
@@ -190,6 +231,7 @@ keywords={conf}
   title={A Unified Framework for U-Net Design and Analysis},
   author={Williams, Christopher and Falck, Fabian and Deligiannidis, George and Holmes, Chris C and Doucet, Arnaud and Syed, Saifuddin},
   journal={NeurIPS},
+  abbr = {NeurIPS},
   html={https://proceedings.neurips.cc/paper_files/paper/2023/hash/58575be50c9b47902359920a4d5d1ab4-Abstract-Conference.html},
   volume={36},
   year={2023},
@@ -200,6 +242,7 @@ keywords={conf}
   title={A Multi-Resolution Framework for U-Nets with Applications to Hierarchical VAEs},
   author={Falck, Fabian and Williams, Christopher and Danks, Dominic and Deligiannidis, George and Yau, Christopher and Holmes, Christopher and Doucet, Arnaud and Willetts, Matthew},
   journal={NeurIPS 2022 (oral)},
+  abbr = {NeurIPS},
   year={2022},
   html={https://proceedings.neurips.cc/paper_files/paper/2022/hash/63f471bb806bf5a3c0a19a99acf5a12a-Abstract-Conference.html},
   keywords={conf}
@@ -227,6 +270,7 @@ keywords={conf}
     author = {Benton, Joe and Shi, Yuyang and De Bortoli, Valentin and Deligiannidis, George and Doucet, Arnaud},
     title = "{From denoising diffusions to denoising Markov models}",
     journal = {JRSS(b) (discussion paper)},
+    abbr = {JRSSb},
     volume = {86},
     number = {2},
     pages = {286-301},
@@ -255,6 +299,7 @@ keywords={conf}
   title={Generalization Bounds with Data-dependent Fractal Dimensions},
   author={Dupuis, Benjamin and Deligiannidis, George and Simsekli, Umut},
   journal={ICML},
+  abbr = {ICML},
   year={2023},
   html={https://openreview.net/pdf?id=uR9GFnJ4IL},
   keywords={conf,star}
@@ -281,9 +326,10 @@ keywords={journal}
   title={On the expected size of conformal prediction sets},
   author={Dhillon, Guneet S and Deligiannidis, George and Rainforth, Tom},
   booktitle={AISTATS},
+  abbr = {AISTATS},
   pages={1549--1557},
   year={2024},
-  html={https://arxiv.org/abs/2306.07254},
+  arxiv={https://arxiv.org/abs/2306.07254},
   organization={PMLR},
 keywords={conf}
 }
@@ -302,8 +348,8 @@ keywords={conf}
   title={Particle Denoising Diffusion Sampler},
   author={Phillips, Angus and Dau, Hai-Dang and Hutchinson, Michael John and De Bortoli, Valentin and Deligiannidis, George and Doucet, Arnaud},
   eprint={2402.06320},
-archivePrefix={arXiv},
   booktitle = {{ICML}},
+  abbr = {ICML},
   html = {https://openreview.net/forum?id=vSgEBlhnAW},
   year={2024},
 keywords={conf}
@@ -316,6 +362,7 @@ keywords={conf}
   title={Uniform Generalization Bounds on Data-Dependent Hypothesis Sets via PAC-Bayesian Theory on Random Sets},
   author={Dupuis, Benjamin and Viallard, Paul and Deligiannidis, George and Simsekli, Umut},
     journal={JMLR},
+    abbr = {JMLR},
   html = {https://www.jmlr.org/papers/volume25/24-0605/24-0605.pdf},
   volume = {25},
   year={2024},
@@ -352,6 +399,7 @@ keywords={conf}
   title={Variance of partial sums of stationary sequences},
   author={Deligiannidis, George and Utev, Sergey},
   journal={Annals of Probability},
+  abbr = {AOP},
   volume={41},
   number={5},
   pages={3606--3616},
@@ -364,6 +412,7 @@ keywords={conf}
   title={Asymptotic variance of stationary reversible and normal Markov processes},
   author={Deligiannidis, George and Peligrad, Magda and Utev, Sergey},
   journal={Electronic Journal of Probability},
+  abbr = {EJP},
   volume={20},
   pages={1--26},
   year={2014},
@@ -387,7 +436,8 @@ keywords={conf}
 @article{deligiannidis2017relative,
   title={Relative Complexity of Random Walks in Random Scenery in the absence of a weak invariance principle for the local times},
   author={Deligiannidis, George and Kosloff, Zemer},
-  journal={Ann.Probab.},
+  journal={Annals of Probability},
+  abbr = {AOP},
   volume={45},
   number={4},
   pages={2505--2532},
@@ -400,6 +450,7 @@ keywords={conf}
   title={Which ergodic averages have finite asymptotic variance?},
   author={Deligiannidis, George and Lee, Anthony},
   journal={Annals of Applied Probability},
+  abbr = {AAP},
   volume={28},
   number={4},
   pages={2309--2334},
@@ -412,6 +463,7 @@ keywords={conf}
   title={The Correlated Pseudo-Marginal Method},
   author={Deligiannidis, George and Doucet, Arnaud and Pitt, Michael K},
   journal={JRSS(B)},
+  abbr = {JRSSb},
   volume={80},
   number={5},
   pages={839--870},
@@ -437,6 +489,7 @@ keywords={conf}
   title={Quantitative uniform stability of the iterative proportional fitting procedure},
   author={Deligiannidis, George and de Bortoli, Valentin and Doucet, Arnaud},
   journal={Annals of Applied Probability},
+  abbr = {AAP},
   volume={34},
   number={1A},
   pages={501--516},
@@ -449,6 +502,7 @@ keywords={journal, star}
   title={Exponential Ergodicity of the Bouncy Particle Sampler},
   author={Deligiannidis, George and Bouchard-C{\^o}t{\'e}, Alexandre and Doucet, Arnaud},
   journal={Annals of Statistics},
+  abbr = {AOS},
   volume={47},
   number={3},
   pages={1268--1287},
@@ -461,6 +515,7 @@ keywords={journal, star}
   title={Controlled sequential monte carlo},
   author={Heng, Jeremy and Bishop, Adrian N and Deligiannidis, George and Doucet, Arnaud},
   journal={Annals of Statistics},
+  abbr = {AOS},
   volume={48},
   number={5},
   pages={2904--2929},
@@ -497,6 +552,7 @@ keywords={journal, star}
   title={Randomized Hamiltonian Monte Carlo as scaling limit of the bouncy particle sampler and dimension-free convergence rates},
   author={Deligiannidis, George and Paulin, Daniel and Bouchard-C{\^o}t{\'e}, Alexandre and Doucet, Arnaud},
   journal={Annals of Applied Probability},
+  abbr = {AAP},
   volume={31},
   issue={6},
   pages={2612--2662},
@@ -521,6 +577,7 @@ keywords={journal, star}
   title={Non-reversible parallel tempering: a scalable highly parallel MCMC scheme},
   author={Syed, Saifuddin and Bouchard-C{\^o}t{\'e}, Alexandre and Deligiannidis, George and Doucet, Arnaud},
   journal={JRSS(B)},
+  abbr = {JRSSb},
   year={2022},
   volume = {84},
   issue = {2},
@@ -572,7 +629,5 @@ keywords={journal, star}
       author={Benjamin Dupuis and Maxime Haddouche and George Deligiannidis and Umut Simsekli},
       year={2025},
       eprint={2502.07584},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
       html={https://arxiv.org/abs/2502.07584},
 }
