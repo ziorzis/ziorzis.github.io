@@ -84,7 +84,7 @@ kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: peterpotaptchik # your LinkedIn user name
+linkedin_username: george-deligiannidis-7043ba7b # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -93,7 +93,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: AwzdzqEAAAAJ # your Google Scholar ID
+scholar_userid: EF1FwN4AAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -105,7 +105,7 @@ whatsapp_number: # your WhatsApp number (full phone number in international form
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-x_username: PPotaptchik # your X handle
+x_username: GeorgeDeligian9 # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
@@ -128,8 +128,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Peter's Blog # blog_name will be displayed in your blog page
-blog_description: At the moment, these are just some notes to help me synthesize what I've been reading.
+blog_name: George's blog # blog_name will be displayed in your blog page
+blog_description: 
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
