@@ -12,10 +12,16 @@
   },
   "work": [
     {
+      "name": "Qube Research & Technologies",
+      "position": "Quantitative Research Director",
+      "startDate": "2025-10"
+    },
+    {
       "name": "Department of Statistics, University of Oxford",
       "position": "Professor of Statistics",
       "url": "https://ziorzis.github.io",
       "startDate": "2024-08",
+      "endDate": "2025-10",
       "highlights": ["Director of MSc in Statistical Science", "Senior Research Fellow in Statistics, Jesus College Oxford"]
     },
     {
