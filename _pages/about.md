@@ -9,8 +9,8 @@ profile:
   image: yorgos.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>University of Oxford</p>
-    <p>deligian@stats.ox.ac.uk</p>
+    <p></p>
+    <p></p>
 
 
 news: true # includes a list of news items
