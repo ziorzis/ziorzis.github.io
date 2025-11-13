@@ -25,6 +25,8 @@ My academic research focuses on the analysis of random processes and objects, es
 
 ---
 ##### Recent talks
+- Tutorial on Diffusions given to the Fundamentals of AI CDT (Oxford), October 2025, 
+ [slides](/assets/pdf/talk.pdf) directly.
 - COLT 2025, *Linear Convergence of Diffusion Models Under the Manifold Hypothesis*, July 2025.
 - CRISM 2.0, Warwick, *Theory for denoising diffusion models* (Keynote), May 2025, 
 - Cambridge, Statslab , *Uniform Quantitative stability for Sinkhorn*, April 2024
