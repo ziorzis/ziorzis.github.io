@@ -21,7 +21,7 @@ social: true # includes social icons at the bottom of the page
 I am Quantitative Research Director at QRT.
 
 Before joining QRT I was an academic and most recently a stats prof at Oxford. 
-My academic research focuses on the analysis of random processes and objects, especially those arising from algorithms used in computational statistics and machine learning. I have worked extensively on the theory and methodology of sampling methods, especially Markov Chain Monte Carlo. I have also worked on random walks on lattices and groups.
+My academic research focuses on the analysis of random processes and objects, especially those arising from algorithms used in computational statistics and machine learning. I have worked extensively on generative modelling especially diffusion models. I have also worked on the theory and methodology of sampling methods such as Markov Chain Monte Carlo. 
 
 ---
 ##### Recent talks
