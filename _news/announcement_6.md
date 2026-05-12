@@ -7,7 +7,7 @@ related_posts: false
 
 **Two paper accepted at AISTATS 2026**:
 
-1. [Beyond Real Data: Synthetic Data through the Lens of Regularization](https://arxiv.org/abs/2510.08095) (**Spotlight**)  
+1. [Beyond Real Data: Synthetic Data through the Lens of Regularization](https://arxiv.org/abs/2510.08095) (**Oral**)  
    * Amitis Shidani, Tyler Farghly, Yang Sun, Habib Ganjgahi, George Deligiannidis*
 
 2. [Adaptive Diffusion Guidance via Stochastic Optimal Control](https://arxiv.org/abs/2505.19367)  
